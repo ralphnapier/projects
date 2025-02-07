@@ -19,6 +19,7 @@
 body {
     margin: 0;
     padding: 0;
+
     position:absolute;
     background-image: url(background.png);
     background-repeat: no-repeat;
@@ -26,6 +27,11 @@ body {
     background-color: black;
     color: #fafbfc;
 }
+.bodyText{
+        margin-left: 30%;
+        padding-top: 100px;
+}
+
 
 *, *:before, *:after {
     /* prevents padding from affecting height and width */
