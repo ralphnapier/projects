@@ -1,12 +1,13 @@
-  :root {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+ :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     --primary: #5a40ff;    /* Contact Block color */
     --primaryLight: #439eff;
     --secondary: #439eff;
     --secondaryLight: #439eff;
-    --headerColor: #ffffff;
+    --headerColor: #ccf9ff;
     --bodyTextColor: #ccf9ff; /* Menu text color */
-    --bodyTextColorWhite: #fafbfc;
+    --bodyTextColorWhite: #ccf9ff;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -28,10 +29,12 @@ body {
     color: #fafbfc;
 }
 .bodyText{
-        margin-left: 30%;
+        padding-left: 30px;
         padding-top: 100px;
 }
-
+.contactInfo{
+    padding-left: 30%;
+}
 
 *, *:before, *:after {
     /* prevents padding from affecting height and width */
@@ -44,7 +47,7 @@ body {
     text-align: inherit;
     letter-spacing: .1em;
     font-weight: 700;
-    color: #fafbfc;
+    color: #ccf9ff;
     margin-bottom: 0.25rem;
     display: block;
 }
@@ -56,7 +59,7 @@ body {
     text-align: inherit;
     max-width: 43.75rem;
     margin: 0 0 1rem 0;
-    color: #fafbfc;
+    color: #ccf9ff;
     position: relative;
 }
 
@@ -67,6 +70,30 @@ body {
     width: 100%;
     max-width: 40.625rem;
     margin: 0;
-    color: #fafbfc;
+    color: #ccf9ff;
 }
-                            
+p, h1, h2, h3, h4, ul, li, aside, button, a, label, #message, #first-name {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      color:#ccf9ff
+}
+#message, #first-name {
+    background: rgb(21, 21, 31);
+    border-radius: 5px;
+}
+button {
+    background-color: black;
+    border-radius: 5px;
+    margin-top: 6%;
+    padding: 1%;
+}
+textarea {
+    min-width: 240px;
+}
+li {
+    list-style-type: none;
+}
